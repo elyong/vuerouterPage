@@ -1,7 +1,7 @@
 <template>
     <div class="page-name">
       <div class="left-side">
-        <router-link :class="{tab:true}" v-for="name in names" :to="'/page1/'+name" tag="li">{{name}}</router-link>
+        <router-link class="tab" v-for="name in names" :to="'/page1/'+name" tag="li">{{name}}</router-link>
       </div>
       <div class="content">
         <label>名字：
