@@ -5,16 +5,16 @@ import PageName from '@/components/PageName'
 Vue.use(Router)
 
 export default new Router({
-  mode:'history',
+  mode: 'history',
   routes: [
     {
-      path:'/',
-      redirect:'/page1/freddy'
+      path: '/',
+      redirect: '/page1'
     },
     {
-      path:'/page1/:name',
-      name:'pageName',
-      component:PageName
+      path: '/page1/:name',
+      name: 'pageName',
+      component: PageName
     }
   ]
 })
